@@ -1,0 +1,220 @@
+﻿html {    
+    background: #eee;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body
+{
+    overflow: auto;
+    height: auto;
+    background-color: transparent !important;
+}
+
+h1, h2 {
+    font-family: Sling, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-size: 36px !important;
+}
+
+h2 {
+    font-size: 24px !important;
+    margin-top: 0px !important;
+}
+
+.container {    
+    background-color: #333;
+    color: #EEE;
+    max-width: 90%;
+    margin-left: auto;   
+    margin-right: auto;
+    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
+    min-width: 380px;
+    border-right: solid 1px #FFF;
+    border-left: solid 1px #FFF;
+    background-image: url("/static/Bumped.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    overflow: hidden;
+    margin-top: 10px;
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.header h1, .header h2 {
+    display: inline;
+    clear: both;
+    float: left;
+}
+
+/*.container > h1, .container > h2 {
+      text-shadow: 0 0 2px #000;
+      -moz-text-shadow: 0 0 2px #000;
+      -webkit-text-shadow: 0 0 2px #000;
+      color: Black
+}*/
+
+button {
+    padding: 4px !important;
+}
+
+button.delete {
+    color: #EEE;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+}
+
+button.refresh {
+    float: right;
+}
+
+button.move {
+    color: #EEE;
+    float: right;
+    font-weight: bold;
+}
+
+#termHolder {
+    margin: 4px;
+    display: inline-block;
+}
+
+#contentHolder {
+    text-align: center;
+}
+
+div.control {
+    text-align: left;
+    display: block;
+    float: left;
+    padding: 8px;
+    border-top: solid 1px #AAA;
+    border-bottom: solid 1px #AAA;
+    margin-left: 0px;    
+    margin-right: -1px;
+    height: 152px;
+    border-right: solid 1px #EEE;    
+    border-left: solid 1px #EEE;   
+    background: #444;
+}
+
+div.control:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+div.control:nth-last-child(2) {
+    border-bottom-right-radius: 6px;
+}
+
+div.control canvas {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    float: left;
+}
+
+div.control input[type='text'] {
+    color: #FFF;
+    background: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Sling; 
+    font-size: 58px;
+    width: 240px;
+    border: none;
+    border-bottom: solid 1px #AAA;
+    text-align: center;
+}
+
+div.control .btn-group {
+    float: right;
+}
+
+div.add {
+    height: 60%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+div.add img {
+    margin: 4px;
+    width: 36px;
+    cursor: pointer;
+}
+
+.multiselect {
+    min-width: 170px;
+}
+
+@font-face {
+    font-family: Sling;
+    src: url("/static/Sling.eot");
+}
+
+@font-face {
+    font-family: Sling;
+    src: url("/static/Sling.ttf");
+}
+
+div.VRT {
+    width: 88%;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #FFF;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-height: 110px;
+    min-width: 355px;
+    max-width: 800px;
+}
+
+div.VRT img {
+    width: 150px;
+    float: left;
+}
+
+@media screen and (min-width : 320px) and (max-width : 600px) {
+    div.VRT {
+        font-size: 12px;
+    }
+
+    div.VRT img {
+        width: 100px;
+    }
+
+    .control:first-child {
+        border-top-right-radius: 6px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .control:nth-last-child(2) {
+        border-bottom-left-radius: 6px;
+    }
+}
+
+div.leftbox {    
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #333;
+}
+
+@media screen and (max-width : 1305px) {
+    div.leftbox {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding-left: 6px;
+    }
+}
